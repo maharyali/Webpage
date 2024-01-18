@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #3d8aa1;
+}
+
+.orange {
+  color: #FF7A01;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+h2{}
+
+.container {
+  max-width: 1300px;
+  margin: 0px auto 0px auto;
+  padding: 0px 40px;
+}
+@media (min-width: 1200px) and (max-width: 1441px) {
+  .container {
+    max-width: 1250px;
+    padding: 0px 36px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 479px) {
+  .container {
+    padding: 0px 30px 0px 20px;
+  }
+}
+
+.about-me {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about-me .about-me-container {
+  position: relative;
+}
+@media (max-width: 960px) {
+  .about-me .about-me-container {
+    padding-bottom: 100px;
+  }
+}
+.about-me .about-me-container .about-me-title {
+  margin-left: 45%;
+  font-size: 55px;
+  color: #f7fcff;
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  .about-me .about-me-container .about-me-title {
+    font-size: 30px;
+  }
+}
+
+.about-me-flex-container {
+  margin-top: 45px;
+  margin-left: 10px;
+  left: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 960px) {
+  .about-me-flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    gap: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .about-me-flex-container {
+    margin-top: -10px;
+  }
+}
+.about-me-flex-container .about-me-image {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+@media (max-width: 500px) {
+  .about-me-flex-container .about-me-image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.about-me-flex-container .about-me-image .back-div {
+  position: absolute;
+  bottom: 0;
+  z-index: -3;
+  background-color: #013747;
+  width: 100%;
+  height: 100%;
+}
+.about-me-flex-container .about-me-image .main-image {
+  width: 75%;
+  height: 75%;
+  overflow: hidden;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  box-shadow: rgb(0, 0, 0) 0px 7px 50px 0px;
+  transition: all 0.2s ease-out;
+  border-radius: 25%;
+}
+
+.about-me-flex-container .about-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  flex: 5  40%;
+}
+@media (max-width: 960px) {
+  .about-me-flex-container .about-me-content {
+    flex-direction: row-reverse;
+  }
+}
+
+.about-me-flex-container .about-me-content .text {
+  color: #d8e6ef;
+  font-weight: 600;
+  font-size: 18px;
+}
+@media (max-width: 500px) {
+  .about-me-flex-container .about-me-content .text {
+    font-size: 20px;
+  }
+}
+
+
+
+.mail-button {
+  display: flex;
+  height: 80px;
+  width: 80px;
+  margin-left: 650px;
+  margin-bottom: -120px;
+
+  border-radius: 50%;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-out;
+}
+.mail-button a {
+  display: flex;
+}
+.mail-button img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.2s ease-out;
+}
+
+
+.mail-button2 {
+  background-color: #e9ecee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 10px solid #001925;
+}
+.mail-button2 img {
+  filter: invert(56%) sepia(42%) saturate(4795%) hue-rotate(360deg) brightness(103%) contrast(105%);
+}
+.mail-button2:hover {
+  background-color: rgb(223, 214, 221);
+  border: 10px solid #ca673d;
+}
+.mail-button2:hover img {
+  filter: unset;
+  transform: scale(1.5);
+}
+
+.portfolio-link {
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.portfolio-link a{
+  text-decoration: none;
+  color: white;
+
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <section class="about-me" id="about-me">
+        <div class="container">
+          <div class="about-me-container">
+            <div class="about-me-title">
+              About
+            </div>
+      
+            <div class="about-me-flex-container">
+              <div class="about-me-image">
+
+                
+                <div class="main-image"><img src="https://th.bing.com/th/id/OIG.tww.3yuE37u4MvlXu9jF?pid=ImgGn" alt="smit"></div>
+              </div>
+              <div class="about-me-content">
+
+      
+                <div class="text">
+                  🌟 Welcome to <strong>DRAMA HARMOY</strong> !!
+                  <br><br>
+
+                  At DRAMA HARMOY, we are passionate about bringing the captivating worlds of K-Drama and K-Pop to enthusiasts like you. Here's a glimpse of what we're all about:
+
+                  <br><br>
+                  🎶 Groove to the K-Pop Beat:
+                  Get ready to dance to the rhythm of K-Pop! Discover the latest chart-toppers, revisit timeless classics, and explore the diverse world of Korean music. From dynamic performances to soulful ballads, our K-Pop section is a celebration of musical artistry that knows no bounds.
+                  
+                  <br><br>
+                 
+                  🎬 Explore the K-Drama Universe:
+                  Immerse yourself in a collection of handpicked K-Dramas that span genres, from heartwarming romances to gripping thrillers. Our goal is to curate an unforgettable viewing experience, introducing you to the best of Korean storytelling and cinematic excellence.   
+                  
+                  <br><br>
+
+                  📆 Stay Updated:
+                  Never miss a K-Drama episode or K-Pop comeback. Follow us for regular updates, exclusive content, and behind-the-scenes insights. We're your go-to source for all things K-Drama and K-Pop.
+                </div>
+              </div>
+            </div>
+            
+            <div class="mail-button mail-button2">
+              <a href="mailto:dramaharmoy@gmail.com"><img src="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/20391be8bf1ed24ef0e5da066bf68a5f6ee78fa1/images/mail.svg" alt="mail"></a>
+            </div>
+      
+          </div>
+      
+        </div>
+      </section>
+      
+      
+      
+      
+      
+      
+      <br><br>
+     
+</body>
+</html>
